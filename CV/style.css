@@ -8,8 +8,14 @@ body {
 	margin: 0;
 }
 
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
 #page{
 	display: flex;
+	flex-direction: row;
 }
 
 h4, h5 {
@@ -43,7 +49,13 @@ img.loisirs {
 
 }
 
-
+footer {
+	flex: 4 0 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 2em;
+}
 
 /********************************************/
 /****** Mise en page colonne de gauche ******/
@@ -97,9 +109,12 @@ main h1 {
     text-transform: uppercase;
 }
 
-main h2 {
+/*couleur du prénom */
+.couleurnom {
+	color: #3949AB;
 }
 
+/* trait après les noms et prénoms et titre CV*/
 main .titre::after{
 	content: '';
 	display: block;
@@ -139,10 +154,7 @@ main p {
 	margin-top: 0px;
 }
 
-.couleurnom {
-	color: #3949AB;
-}
-
+/*dates*/
 .date {
 	flex: 1;
 }
@@ -155,6 +167,7 @@ main p {
 
 }
 
+/*titres partie principales*/
 main #formation {
 	margin: 60px 0px 0px 0px;
 	/*padding: 0px 0px 0px 30px;*/
@@ -181,24 +194,30 @@ main #divers {
 	display: block;
 }
 
-div.titresection {
+/*titre avec icone et texte*/
+.titresection {
 	text-align: left;
 	margin-left: 10px;
 	display: flex;
 }
 
-div.titresection h4 {
+.titresection h4 {
 	margin-top: 10px;
 	margin-bottom: 0px;
+	flex-basis: auto;
 }
-
-div.listelangue {
+ 
+.listelangue {
 	text-align: left;
 	margin-left: 10px;
 	display: flex;
 }
 
-div.listelangue img {
+.listelangue img {
 	margin: 0px 5px 0px 0px;
 	padding-left: 10px;
 }
+
+/*********************************************/
+/*********************RESPONSIVE**************/
+/*********************************************/

@@ -40,7 +40,7 @@ p {
 }
 
 a, a:visited {
-	color: rgb(66, 66, 66)f;
+	color: rgb(66, 66, 66);
 	text-decoration: none;
 }
 
@@ -104,7 +104,7 @@ h4 {
 
 aside {
 	width: auto;
-	background-color: #c8e6c9;
+	background-color: #c8e6f9;
 	color: rgb(66, 66, 66);
 	display: flex;
 	flex-direction: column;
@@ -167,13 +167,13 @@ main h2 {
 
 /*couleur du prénom */
 .couleurnom {
-	color: #2e7d32;
+	color: #2e327d;
 }
 
 /* trait après les noms et prénoms et titre CV*/
 main .titredeco {
 	border-bottom: solid;
-	border-color: #2e7d32;
+	border-color: #2e327d;
 }
 
 /*photo pour la version mobile*/
@@ -194,13 +194,13 @@ section section {
 }
 
 .titresection {
-	border-bottom: solid #2e7d32;
+	border-bottom: solid #2e327d;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 	text-align: left;
 	margin-left: 10px;
-	margin-top: 30px;
+	margin-top: 30px;;
 	display: flex;
 }
 
@@ -214,7 +214,7 @@ main p {
 }
 
 .titresection .fas {
-	color: #4caf50;
+	color: #4c50af;
 }
 
 .date, .formation {
@@ -225,35 +225,21 @@ main p {
 }
 
 .date .fas,.date .far {
-	color: #4caf50;
+	color: #4c60af;
 }
 
 .name {
 	font-weight: bold;
 }
 
-/*titres parties principales*/
-
-#langues {
+/*partie divers*/
+.recommend {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
-#competences {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#competences h5 {
-	font-weight: bold;
-	margin-top: 30px;
-}
-
-.listelangue {
-	text-align: left;
-	margin-left: 10px;
-	display: flex;
-}
 
 
 /*********************************************/
@@ -290,25 +276,11 @@ main p {
 		text-align: left;
 	}
 
-	#langues {
-		width: 50%;
-		display: block;
-		line-height: 1.5;
-	}
-	
-	#competences {
-		width: 50%;
+	.recommend {
+		flex: 1.2;
+		margin-left: 20px;
 		position: relative;
-		display: block;
-	}
-
-	#competences h5 {
-		font-weight: bold;
-		margin-top: 5px;
-	}
-
-	#competences p {
-		margin-bottom: 10px;
+		width: 462px;
 	}
 }
 
@@ -322,6 +294,9 @@ main p {
 	#page{
 		background-color: #eceff1;
 		flex-direction: unset;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	#page > aside {
@@ -334,7 +309,7 @@ main p {
 	
 	aside {
 		width: 32%;
-		background-color: #c8e6c9;
+		background-color: #c8e6f9;
 		color: rgb(66, 66, 66);
 	}
 
@@ -381,7 +356,7 @@ main p {
 	}
 	
 	.titresection {
-		border-bottom: solid #2e7d32;
+		border-bottom: solid #2e327d;
 		width: 100%;
 		justify-content: left;
 		align-items: center;
@@ -396,11 +371,6 @@ main p {
 		margin-bottom: 0px;
 		flex-basis: auto;
 	}
-	 
-	.listelangue {
-		text-align: left;
-		margin-left: 10px;
-		display: flex;
-	}
+	
 }
 	
